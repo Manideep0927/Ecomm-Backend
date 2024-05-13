@@ -1,5 +1,5 @@
 import http from "http";
-import app from "./ecommerce-backend/app/app.js";
+import app from "./app/app.js";
 
 //create the server
 const PORT = process.env.PORT || 2030;
