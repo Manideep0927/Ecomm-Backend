@@ -5,16 +5,16 @@ dotenv.config();
 import express from "express";
 import path from "path";
 import dbConnect from "../config/dbConnect.js";
-import { globalErrhandler, notFound } from "../../middlewares/globalErrHandler.js";
-import brandsRouter from "../../routes/brandsRouter.js";
-import categoriesRouter from "../../routes/categoriesRouter.js";
-import colorRouter from "../../routes/colorRouter.js";
-import orderRouter from "../../routes/ordersRouter.js";
-import productsRouter from "../../routes/productsRoute.js";
-import reviewRouter from "../../routes/reviewRouter.js";
-import userRoutes from "../../routes/usersRoute.js";
-import Order from "../../model/Order.js";
-import couponsRouter from "../../routes/couponsRouter.js";
+import brandsRouter from "../routes/brandsRouter.js";
+import categoriesRouter from "../routes/categoriesRouter.js";
+import colorRouter from "../routes/colorRouter.js";
+import orderRouter from "../routes/ordersRouter.js";
+import productsRouter from "../routes/productsRoute.js";
+import reviewRouter from "../routes/reviewRouter.js";
+import userRoutes from "../routes/usersRoute.js";
+import Order from "../model/Order.js";
+import couponsRouter from "../routes/couponsRouter.js";
+import { globalErrhandler,notFound } from "../middlewares/globalErrHandler.js";
 
 //db connect
 dbConnect();
