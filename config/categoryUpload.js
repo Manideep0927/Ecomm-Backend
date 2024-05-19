@@ -10,11 +10,11 @@ cloudinary.config({
   api_key: process.env.CLOUDINARY_API_KEY,
   api_secret: process.env.CLOUDINARY_API_SECRET_KEY,
 });
-
+console.log('cloudinary',cloudinary)
 // Create storage engine for Multer
 const storage = new CloudinaryStorage({
   cloudinary,
-  allowedFormats: ["jpg", "png"],
+  allowedFormats: ["jpg", "png", "jpeg"],
   params: {
     folder: "blog-api",
   },
